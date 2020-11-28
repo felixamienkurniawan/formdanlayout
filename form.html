@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout dan form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #00b0f0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .formlogin {
+            background-color: #fff;
+            margin: 160px;
+            margin-left: 500px;
+            margin-right: 500px;
+            padding: 50px;
+        }
+        
+        td {
+            padding: 10px;
+        }
+        
+        input,
+        select,
+        button {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="formlogin">
+
+        <form>
+            <h3 align="center">Isi identitas berikut ini dengan benar</h3>
+            <br>
+            <table>
+                <tr>
+                    <td><label for="nama">Nama</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="nama"></td>
+                </tr>
+                <tr>
+                    <td><label for="alamat">Alamat</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="alamat"></td>
+                </tr>
+                <tr>
+                    <td><label for="jeniskelamin">Jenis Kelamin</label></td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jeniskelamin" id="laki-laki">Laki-Laki
+                        <input type="radio" name="jeniskelamin" id="perempuan">Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="agama">Agama</label></td>
+                    <td>:</td>
+                    <td>
+                        <select name="agama" id="agama">
+                            <option value="">Islam</option>
+                            <option value="">Kristen</option>
+                            <option value="">Katolik</option>
+                            <option value="">Hindu</option>
+                            <option value="">Budha</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">Kirim</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>
